@@ -1,13 +1,4 @@
-message = input("> ")
-words = message.split(" ")
-imoji = {
-    ":)": "😊",
-    ":(": "😔"
-}
-output = ""
-for word in words:
-    if word in imoji:
-        output += imoji[word]
-    else:
-        output += word + " "
-print(output)
+from convertor import kg_to_lbs
+
+
+print(kg_to_lbs(70))
